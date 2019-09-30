@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  overflow: auto;
+
+  .item {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+
+  .item:last-child {
+    margin-bottom: 0;
+  }
+}

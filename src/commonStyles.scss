@@ -1,0 +1,40 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$purple-color: #6200ee;
+$white-color: #fff;
+$black-color: #000;
+
+html,
+body {
+  font-size: 14px;
+}
+
+a {
+  color: $black-color !important;
+  text-decoration: none !important;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#root *,
+#root *::before,
+#root *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}

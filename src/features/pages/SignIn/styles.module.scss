@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  height: inherit;
+}
+
+.signInBlock {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 300px;
+  top: calc((100% - 300px) / 2);
+
+  margin: 0 5rem;
+}
+
+.signInTo {
+  color: #00455e;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+}
+
+.enterDetails {
+  color: #6d7278;
+  margin-bottom: 1.5rem;
+}
+
+.forgotPass {
+  margin-top: 30px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.colorBlock {
+  flex: 0 0 48rem;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0091ff;
+}
