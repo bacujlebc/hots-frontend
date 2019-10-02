@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import SignInForm from "./SignInForm";
 
 // Thunks
-import { loginThunk } from "store/thunks";
+import { login } from "store/thunks/authThunk";
 
 // Utils & constants
 import { IInitialData } from "./constants";
@@ -17,9 +17,9 @@ export const SignIn = (): JSX.Element => {
   const dispatch = useDispatch();
   const submitForm = useCallback(
     (values: IInitialData, actions: FormikActions<FormikValues>): void => {
-      dispatch(loginThunk(values));
+      dispatch(login(values));
     },
-    []
+    [dispatch]
   );
 
   return (

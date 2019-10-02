@@ -1,5 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import { Provider } from "react-redux";
 import { Route, Switch } from "react-router";
 import { ConnectedRouter } from "connected-react-router";

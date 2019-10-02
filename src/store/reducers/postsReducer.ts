@@ -1,4 +1,4 @@
-import { createAction, createReducer } from "redux-act";
+import { createReducer } from "redux-act";
 
 interface IPost {
   id: number;

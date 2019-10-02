@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 // Thunks
@@ -15,7 +15,7 @@ export const Welcome = (): JSX.Element => {
 
   useEffect((): void => {
     dispatch(getPosts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
