@@ -7,6 +7,15 @@ $black-color: #000;
 html,
 body {
   font-size: 14px;
+  // background-color: #ccc;
+  background: linear-gradient(
+    to bottom,
+    #1e5799 0%,
+    #2989d8 50%,
+    #ffffff 84%,
+    #ffffff 84%,
+    #ffffff 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 a {
@@ -17,12 +26,12 @@ a {
 html,
 body,
 #root {
-  height: 100%;
   font-family: Roboto, sans-serif;
 
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: row;
 }
 
 #root *,

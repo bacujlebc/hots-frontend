@@ -1,9 +1,10 @@
 import Axios from "utils/axios";
+import { push } from "connected-react-router";
 
 export const getPosts = () => async dispatch => {
   try {
     const token = localStorage.getItem("token");
-    if (!token) return;
+    if (!token) dispatch(push("/"));
     const { data: posts } = await Axios.request({
       url: "posts",
       method: "GET",
@@ -21,5 +22,7 @@ export const getPosts = () => async dispatch => {
       type: "GET_POSTS_FAILED",
       payload: error
     });
+
+    dispatch(push("/"));
   }
 };

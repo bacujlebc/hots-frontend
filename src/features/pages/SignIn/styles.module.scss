@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
+  flex: 1;
   height: inherit;
+  background-color: white;
 }
 
 .signInBlock {
